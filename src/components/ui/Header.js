@@ -19,7 +19,9 @@ import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemText from '@material-ui/core/ListItemText'
 
-import logo from '../../assets/logo.svg'
+// import logo from '../../assets/logo.svg'
+// import logo from '../../assets/myLogos/ABLogo3.png'
+import logo from '../../assets/myLogos/main_logo.png'
 
 function ElevationScroll(props) {
   const { children } = props;
@@ -47,13 +49,16 @@ const useStyles = makeStyles(theme => ({
     }
   },
   logo: {
-    height: '7em',
+    // margin: '10px',
+    height: '6em',
     [theme.breakpoints.down('md')]: {
-      height: '6.5em'
+      height: '5.5em'
     },
     [theme.breakpoints.down('xs')]: {
-      height: '5.5em'
-    }
+      height: '4.5em'
+    },
+    zIndex: -1,
+    marginLeft: '40px'
   },
   logoContainer: {
     padding: 0,
@@ -68,7 +73,8 @@ const useStyles = makeStyles(theme => ({
     ...theme.typography.tab,
     minWidth: 10,
     marginLeft: '25px',
-    color: 'white',
+    // color: 'white',
+    color: '#165d63',
     opacity: 0.6,
   },
   button: {
@@ -80,7 +86,8 @@ const useStyles = makeStyles(theme => ({
   },
   menu: {
     background: theme.palette.common.blue,
-    color: 'white',
+    // color: 'white',
+    color: '#165d63',
     borderRadius: 0
   },
   menuItem: {
@@ -107,6 +114,7 @@ const useStyles = makeStyles(theme => ({
   drawerItem: {
     ...theme.typography.tab,
     color: 'white',
+    color: '#165d63',
     opacity: 0.4
   },
   drawerItemEstimate: {
