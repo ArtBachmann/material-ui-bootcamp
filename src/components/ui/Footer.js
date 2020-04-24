@@ -12,7 +12,7 @@ import instagram from '../../assets/instagram.svg'
 
 const useStyles = makeStyles(theme => ({
   footer: {
-    backgroundColor: theme.palette.common.blue,
+    backgroundColor: theme.palette.common.lightGreen,
     height: '160px',
     width: '100%',
     zIndex: 1302,

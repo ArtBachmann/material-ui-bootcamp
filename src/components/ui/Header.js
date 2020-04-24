@@ -75,15 +75,19 @@ const useStyles = makeStyles(theme => ({
     color: '#165d63',
     opacity: 0.6,
   },
-  button: {
+  estimateButton: {
     ...theme.typography.estimate,
-    borderRadius: '50px',
-    marginLeft: '50px',
-    marginRight: '30px',
-    height: '45px'
+    background: theme.palette.common.darkGreen,
+    borderRadius: 50,
+    height: 45,
+    width: 145,
+    marginRight: 40,
+    '&:hover': {
+      background: theme.palette.secondary.main
+    }
   },
   menu: {
-    background: theme.palette.common.blue,
+    background: theme.palette.common.lightGreen,
     // color: 'white',
     color: '#165d63',
     borderRadius: 0
@@ -107,7 +111,7 @@ const useStyles = makeStyles(theme => ({
     width: '50px'
   },
   drawer: {
-    backgroundColor: theme.palette.common.blue
+    backgroundColor: theme.palette.common.lightGreen
   },
   drawerItem: {
     ...theme.typography.tab,
@@ -115,7 +119,7 @@ const useStyles = makeStyles(theme => ({
     opacity: 0.4
   },
   drawerItemEstimate: {
-    backgroundColor: theme.palette.common.orange
+    backgroundColor: theme.palette.common.darkGreen
   },
   drawerItemSelected: {
     '& .MuiListItemText-root': {
@@ -229,7 +233,7 @@ const Header = (props) => {
       <Button
         variant='contained'
         color='secondary'
-        className={classes.button}
+        className={classes.estimateButton}
         to='/estimate'
       >
         Free Estimate

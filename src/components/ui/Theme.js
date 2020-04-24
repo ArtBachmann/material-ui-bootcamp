@@ -1,20 +1,21 @@
 import { createMuiTheme } from '@material-ui/core/styles';
 
-// const arcBlue = '#035d66'
-const arcBlue = '#e8f1f2'
-const arcOrange = '#2b6573'
+const lightGreen = '#e8f1f2'
+const darkGreen = '#2b6573'
+const mediumGreen = '#7bacb7'
 
 export default createMuiTheme({
   palette: {
     common: {
-      blue: `${arcBlue}`,
-      orange: `${arcOrange}`
+      lightGreen: `${lightGreen}`,
+      darkGreen: `${darkGreen}`
     },
     primary: {
-      main: `${arcBlue}`
+      main: `${lightGreen}`
     },
     secondary: {
-      main: `${arcOrange}`
+      main: `${mediumGreen}`,
+      medium: `${lightGreen}`
     }
   },
 
@@ -32,6 +33,34 @@ export default createMuiTheme({
       fontSize: '1rem',
       textTransform: 'none',
       color: 'white'
+    },
+    h2: {
+      fontFamily: 'Raleway',
+      fontSize: '2.5rem',
+      textTransform: 'none',
+      fontWeight: 700,
+      color: `${darkGreen}`,
+      lineHeight: 1.5
+    },
+    h3: {
+      fontFamily: 'Pacifico',
+      fontSize: '1rem',
+      fontWeight: 700
+    },
+    h4: {
+      fontFamily: 'Raleway',
+      fontSize: '1rem',
+      fontWeight: 700
+    },
+    h5: {
+      fontFamily: 'Raleway',
+      fontSize: '1rem',
+      fontWeight: 700
+    },
+    h6: {
+      fontFamily: 'Raleway',
+      fontSize: '1rem',
+      fontWeight: 700
     }
   }
 })
